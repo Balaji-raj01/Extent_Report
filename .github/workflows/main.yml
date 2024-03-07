@@ -23,6 +23,10 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
+      - name: Change to Project Directory
+        run: cd D:\a\Extent_Report\Extent_Report
+
       - name: Run TestNG Tests
         run: mvn -B test -Dsurefire.suiteXmlFiles=testng.xml
+
 
