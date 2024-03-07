@@ -16,7 +16,7 @@ jobs:
       - name: Print Current Directory
         run: |
           echo "Current Directory: $(pwd)"
-
+          
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
@@ -24,7 +24,8 @@ jobs:
           java-version: '11'
 
       - name: Run TestNG Tests
-        run: mvn -B -f Extent_Report/pom.xml test -Dsurefire.suiteXmlFiles=testng.xml
+        run: mvn -B -f Extent_Report/Extent_Report/pom.xml test -Dsurefire.suiteXmlFiles=testng.xml
+
 
 
 
