@@ -1,0 +1,1 @@
+{"uuid":"4044c505-2dd0-429d-bfa4-ec90ef2dfb0b","name":"TestCases.Userflow_1.before","children":["a6ca4ad3-22e9-4597-a5c8-0cd169ff71c8"],"description":"","befores":[{"name":"before","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1703478441509,"stop":1703478441522}],"afters":[],"start":1703478441509,"stop":1703478441522}

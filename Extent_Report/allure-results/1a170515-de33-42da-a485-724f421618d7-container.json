@@ -1,0 +1,1 @@
+{"uuid":"1a170515-de33-42da-a485-724f421618d7","name":"TestCases.Userflow_1.browser","children":["c42959a6-54dc-41c8-b64d-5ce2bf269977"],"description":"","befores":[{"name":"browser","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1703918790409,"stop":1703918790410}],"afters":[],"start":1703918790409,"stop":1703918790410}
