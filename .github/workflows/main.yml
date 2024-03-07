@@ -1,0 +1,23 @@
+name: Run Maven Tests and Collect Extent Reports
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_tests_and_collect_reports:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Run TestNG Tests
+        run: mvn -B test -Dsurefire.suiteXmlFiles=testng.xml
