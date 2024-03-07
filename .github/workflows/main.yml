@@ -24,7 +24,7 @@ jobs:
           java-version: '11'
 
       - name: Run TestNG Tests
-        run: mvn -B -f Extent_Report/Extent_Report/pom.xml test -Dsurefire.suiteXmlFiles=testng.xml
+        run: mvn -B -f Extent_Report/pom.xml test -Dsurefire.suiteXmlFiles=testng.xml
 
 
 
