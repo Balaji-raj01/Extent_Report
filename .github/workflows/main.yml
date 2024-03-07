@@ -26,10 +26,3 @@ jobs:
       - name: Run TestNG Tests
         run: mvn -B test -Dsurefire.suiteXmlFiles=testng.xml
 
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt'
-          java-version: '11'
-
-      - name: Run TestNG Tests
-        run: mvn -B test -Dsurefire.suiteXmlFiles=testng.xml
