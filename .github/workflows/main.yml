@@ -13,7 +13,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Print Current Directory
+        run: |
+          echo "Current Directory: $(pwd)"
+
       - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Run TestNG Tests
+        run: mvn -B test -Dsurefire.suiteXmlFiles=testng.xml
+
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
