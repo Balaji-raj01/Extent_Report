@@ -28,8 +28,13 @@ public class Userflow_1 extends Extent_Report implements Locators{
 
 	@BeforeTest
 	public void extent_Report() {
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		driver=new ChromeDriver(options);
+		Dimension size = new Dimension(1200, 800);
+        driver.manage().window().setSize(size);
+		
 		extent=Extent_Report.reportsetup();
 
 	}
